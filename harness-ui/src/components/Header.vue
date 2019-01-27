@@ -6,7 +6,7 @@
       </div>
       <div class="md-toolbar-row">
         <md-menu>
-          <md-button>Launch</md-button>
+          <md-button @click="parent.showLaunch = true">Launch</md-button>
         </md-menu>
         <md-menu>
           <md-button>Host Actions</md-button>

@@ -1,5 +1,9 @@
 <template>
-  <div class="main"></div>
+  <div class="main">
+    <md-drawer :md-active.sync="parent.showLaunch">
+      <md-button>Launch</md-button>
+    </md-drawer>
+  </div>
 </template>
 
 <script lang="ts">

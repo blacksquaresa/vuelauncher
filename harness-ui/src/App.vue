@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from "vue-property-decorator";
 import VueMaterial from "vue-material";
 import "vue-material/dist/vue-material.min.css";
 import Header from "./components/Header.vue";
@@ -24,7 +24,9 @@ Vue.use(VueMaterial);
     Main
   }
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  @Prop() public showLaunch!: boolean;
+}
 </script>
 
 <style lang="scss">
